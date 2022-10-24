@@ -1,0 +1,74 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+    {% if key == procurement.name %}
+        <div class="welcome">
+            <h1>Welcome To The {{ key }} Team!</h1>
+        </div>
+        <div class="card">
+            <div class="card_header">
+                <h3>{{ procurement.name }}</h3>
+            </div>
+            <div class="card_content">
+                <p>{{ procurement.decs }}</p>
+                <p>{{ procurement.members }}</p>
+            </div>
+        </div>
+    {% endif %}
+    {% if key == management.name %}
+        <div class="welcome">
+            <h1>Welcome To The {{ key }} Team!</h1>
+        </div>
+        <div class="card">
+            <div class="card_header">
+                <h3>{{ management.name }}</h3>
+            </div>
+            <div class="card_content">
+                <p>{{ management.decs }}</p>
+                <p>{{ management.members }}</p>
+            </div>
+        </div>
+    {% endif %}
+    {% if key == documentation.name %}
+        <div class="welcome">
+            <h1>Welcome To The {{ key }} Team!</h1>
+        </div>
+        <div class="card">
+            <div class="card_header">
+                <h3>{{ documentation.name }}</h3>
+            </div>
+            <div class="card_content">
+                <p>{{ documentation.decs }}</p>
+                <p>{{ documentation.members }}</p>
+            </div>
+        </div>
+    {% endif %}
+    {% if key == community.name %}
+        <div class="welcome">
+            <h1>Welcome To The {{ key }} Team!</h1>
+        </div>
+        <div class="card">
+            <div class="card_header">
+                <h3>{{ community.name }}</h3>
+            </div>
+            <div class="card_content">
+                <p>{{ community.decs }}</p>
+                <p>{{ community.members }}</p>
+            </div>
+        </div>
+    {% endif %}
+    {% if key == '/' %}
+        <div class="welcome">
+            <h1>Welcome To The {{ key }} Team!</h1>
+        </div>
+        <div class="card">
+            <div class="card_header">
+                <h3>{{ procurement.name }}</h3>
+            </div>
+            <div class="card_content">
+                <p>{{ procurement.decs }}</p>
+                <p>{{ procurement.members }}</p>
+            </div>
+        </div>
+    {% endif %}
+{% endblock content%}

@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    {% if key == caracal.name %}
+        <div class="welcome">
+            <h1>The {{ key }}</h1>
+        </div>
+        <div class="big">
+            <div class="card">
+                <div class="pic">
+                    <img src="{% static 'images/caracal_thumbnail.jpg' %}"/>
+                </div>
+                <div class="card_header">
+                    <h3>{{ caracal.name }}</h3>
+                    <p>Location: {{ caracal.home }}</p>
+                    <p>Population: {{ caracal.pop }}</p>
+                </div>
+                <br>
+                <div class="card_content">
+                    <p>{{ caracal.decs }}</p>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    {% if key == serval.name %}
+        <div class="welcome">
+            <h1>The {{ key }}</h1>
+        </div>
+        <div class="big">
+            <div class="card">
+                <div class="pic">
+                    <img src="{% static 'images/serval-full-body_square.webp' %}"/>
+                </div>
+                <div class="card_header">
+                    <h3>{{ serval.name }}</h3>
+                    <p>Location: {{ serval.home }}</p>
+                    <p>Population: {{ serval.pop }}</p>
+                </div>
+                <br>
+                <div class="card_content">
+                    <p>{{ serval.decs }}</p>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    {% if key == cougar.name %}
+        <div class="welcome">
+            <h1>The {{ key }}</h1>
+        </div>
+        <div class="big">
+            <div class="card">
+                <div class="pic">
+                    <img src="{% static 'images/cougar2.jpg' %}"/>
+                </div>
+                <div class="card_header">
+                    <h3>{{ cougar.name }}</h3>
+                    <p>Location: {{ cougar.home }}</p>
+                    <p>Population: {{ cougar.pop }}</p>
+                </div>
+                <br>
+                <div class="card_content">
+                    <p>{{ cougar.decs }}</p>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    {% if key == leopard.name %}
+        <div class="welcome">
+            <h1>The {{ key }}</h1>
+        </div>
+        <div class="big">
+            <div class="card">
+                <div class="pic">
+                    <img src="{% static 'images/Leopard-jiya.jpg' %}"/>
+                </div>
+                <div class="card_header">
+                    <h3>{{ leopard.name }}</h3>
+                    <p>Location: {{ leopard.home }}</p>
+                    <p>Population: {{ leopard.pop }}</p>
+                </div>
+                <br>
+                <div class="card_content">
+                    <p>{{ leopard.decs }}</p>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <h1> Here are some facts about my favorite wild cats!</h1>
+    {% endif %}
+{% endblock content%}
